@@ -1,0 +1,95 @@
+/*var Marquee_up= function(id){
+try{document.execCommand("BackgroundImageCache", false, true);}catch(e){};
+if(document.getElementById(id)){
+	var container = document.getElementById(id),
+	original = container.getElementsByTagName("dt")[0],
+	clone = container.getElementsByTagName("dd")[0],
+	speed = arguments[1] || 60;
+	clone.innerHTML=original.innerHTML;
+	var rolling = function(){
+	if(container.scrollTop == clone.offsetTop){
+	container.scrollTop = 0;
+	}else{
+	container.scrollTop++;
+	}
+	}
+	var timer = setInterval(rolling,speed)//设置定时器
+	container.onmouseover=function() {clearInterval(timer)}//鼠标移到marquee上时，清除定时器，停止滚动
+	container.onmouseout=function() {timer=setInterval(rolling,speed)}//鼠标移开时重设定时器
+}
+}*/
+var Marquee_up= function(id,speed){
+try{document.execCommand("BackgroundImageCache", false, true);}catch(e){};
+if(document.getElementById(id)){
+var demotop=document.getElementById(id)
+
+var demotop1=document.getElementById(id+'1')
+
+var demotop2=document.getElementById(id+'2')
+//var speed=50;  //设置图片滚动速度
+demotop2.innerHTML=demotop1.innerHTML  //复制demo1为demo2
+
+function Marquee(){
+if(demotop2.offsetTop-demotop.scrollTop<=0)
+demotop.scrollTop-=demotop1.offsetHeight
+else{
+demotop.scrollTop++
+}
+
+}
+var MyMar=setInterval(Marquee,speed)  //设置定时器
+demotop.onmouseover=function() {clearInterval(MyMar)}  //鼠标移上时清除定时器达到滚动停止的目的
+demotop.onmouseout=function() {MyMar=setInterval(Marquee,speed)}//鼠标移开时重设定时器，继续滚动
+}
+}
+/*var Marquee_left= function(id){
+try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}
+//alert(typeof(document.getElementById(id))+id);
+if(document.getElementById(id)){
+	var container = document.getElementById(id),
+	original = container.getElementsByTagName("dt")[0],
+	clone = container.getElementsByTagName("dd")[0],
+	//speed = arguments[1] || 60;
+	speed=15
+	clone.innerHTML=original.innerHTML;
+	var rolling = function(){
+	if(container.scrollLeft == clone.offsetLeft){
+	container.scrollLeft = 0;
+	}else{
+	container.scrollLeft++;
+	}
+	}
+
+
+	var MyMar=setInterval(rolling,speed)  //设置定时器
+container.onmouseover=function() {clearInterval(MyMar)}  //鼠标移上时清除定时器达到滚动停止的目的
+container.onmouseout=function() {MyMar=setInterval(rolling,speed)}//鼠标移开时重设定时器，继续滚动
+
+	
+}
+}*/
+
+
+var Marquee_left=function(id,speed){
+	try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}
+	if(document.getElementById(id)){
+var demo=document.getElementById(id)
+
+var demo1=document.getElementById(id+'1')
+
+var demo2=document.getElementById(id+'2')
+//var speed=50;  //设置图片滚动速度
+demo2.innerHTML=demo1.innerHTML  //复制demo1为demo2
+function Marquee(){
+if(demo2.offsetWidth-demo.scrollLeft<=0)   //当滚动至demo1与demo2交界时
+demo.scrollLeft-=demo1.offsetWidth     //dome跳到最左端
+else{
+demo.scrollLeft++
+}
+}
+var MyMar=setInterval(Marquee,speed)  //设置定时器
+demo.onmouseover=function() {clearInterval(MyMar)}  //鼠标移上时清除定时器达到滚动停止的目的
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}//鼠标移开时重设定时器，继续滚动
+}
+}
+

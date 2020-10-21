@@ -1,0 +1,247 @@
+// JavaScript Document
+
+	//惤炵蒐
+	function tab_Change(divId,divName,DivCount) 
+	{ 
+	 for(i=1;i<=DivCount;i++)
+	 {
+		document.getElementById(divName+i).style.display="none"; 
+		document.getElementById("menu_div_"+i).className="lang_tab_invalid";
+	 }
+		document.getElementById(divName+divId).style.display="block";
+		document.getElementById("menu_div_"+divId).className="lang_tab_valid";
+	} 
+	
+	
+	
+    // 齬唗砃奻
+	function upboard(n){	
+			var obj1=document.getElementById('board_'+n);
+			var obj2=document.getElementById('board_'+(n-1));
+			if(obj1!=null && obj2!=null){
+				HTML1=obj1.innerHTML;
+				HTML2=obj2.innerHTML;
+				obj1.innerHTML=HTML2;
+				obj2.innerHTML=HTML1
+			}
+	}
+	
+	// 齬唗砃狟
+	function downboard(n){
+			var obj1=document.getElementById('board_'+n);
+			var obj2=document.getElementById('board_'+(n+1));
+			if(obj1!=null && obj2!=null){
+				HTML1=obj1.innerHTML;
+				HTML2=obj2.innerHTML;
+				obj1.innerHTML=HTML2;
+				obj2.innerHTML=HTML1
+			}
+	   }
+
+
+	//腢
+	function Check_All(form)
+	  {
+	  for (var i=0;i<form.elements.length;i++)
+		{
+		var e = form.elements[i];
+		if (e.Name != "chkAll"&&e.disabled==false)
+		   e.checked = form.chkAll.checked;
+		}
+	}
+	
+	//腢
+	function checkAll(name)
+	{
+	var el = document.form1.getElementsByTagName('input');
+	var len = el.length;
+	 for(var i=0; i<len; i++)
+	 {
+	 if((el[i].type=="checkbox") && (el[i].name==name))
+	 {
+	 el[i].checked = true;
+	 }
+	 }
+	}
+	
+	//秏腢
+	function reselectAll(name)
+	{
+	var el = document.form1.getElementsByTagName('input');
+	var len = el.length;
+	 for(var i=0; i<len; i++)
+	 {
+	 if((el[i].type=="checkbox") && (el[i].name==name))
+	 {
+	 if(el[i].checked)
+	 {
+	 el[i].checked = false;
+	 }
+	 else
+	 {
+	 el[i].checked = true;
+	 }
+	 }
+	 }
+	} 
+	
+	//秏腢
+	function clearAll(name)
+	{
+	var el = document.form1.getElementsByTagName('input');
+	var len = el.length;
+	 for(var i=0; i<len; i++)
+	 {
+	 if((el[i].type=="checkbox") && (el[i].name==name))
+	 {
+	 el[i].checked = false;
+	 }
+	 }
+	}
+	
+	//?聃枑蝠岆瘁腢
+	function Dlete(name,str1,str2)
+	{
+
+	  var j=0;
+	  var str1=str1;
+	  var str2=str2;
+	  
+	  var el = document.form1.getElementsByTagName('input');
+	 var len = el.length;
+	
+	  for(var i=0;i<len;i++)
+	  {
+		 if((el[i].type=="checkbox") && (el[i].name==name))
+		 {
+			if(el[i].checked)
+			{
+			   j++; 
+			}            
+		  }                 
+	   }
+	   if(j==0)
+	   {
+		  alert(str1);
+		  return false;
+	   }else{
+		  if(window.confirm(str2)){
+			  
+		  
+		  document.form1.submit();
+		  return true;
+		  }
+		
+		  
+	   }
+	
+	}
+	
+	//偞离垀衄惤炵僕肮index硉
+	function select_all_option(index){
+		var el = document.form1.getElementsByTagName('select');
+		var len = el.length;
+		if(index==0){
+			for(i=0;i<len;i++){
+		 		document.form1.getElementsByTagName('select')[i].selectedIndex=1;
+	 		}
+		}else{
+		
+			for(i=0;i<len;i++){
+				document.form1.getElementsByTagName('select')[i].selectedIndex=index;
+				
+			}
+		}
+		
+	}
+	
+	
+
+	function jumpPage(re_page,selObj){ 
+	  eval("location='"+re_page+selObj.options[selObj.selectedIndex].value+"'");
+	}
+
+
+    //table笢脣珨俴
+	function addRow(arr_pic){
+	 	//var num=document.getElementsByName(arr_pic).length+1;
+		oTR=idTB.insertRow(idTB.rows.length);
+		tmpNum=oTR.rowIndex+1;
+		oTD=oTR.insertCell(0);
+		oTD.innerHTML='<tr><td colspan="3" align="center" class="table_td"  scope="col"><input type="file" name="'+arr_pic+'" class="input_text"  style="width:140px;"   id="'+arr_pic+'" />&nbsp;URL:<input type="text" class="input_text" name="url[]" style="width:140px;"  value="#" id="url[]" /></td></tr>';
+
+		
+	}
+    
+	//table笢壺珨俴
+	function delRow(arr_pic){
+		var num=document.getElementsByName(arr_pic).length;
+		
+		 if(num>0){
+			idTB.deleteRow(num-1);
+		}
+	}
+
+
+//杸垀衄趼睫揹眕摯諾跡
+function replace_all(str, sptr, sptr1){
+	
+	while (str.indexOf(sptr) >=0)
+	{   
+	   str = str.replace(sptr, sptr1);
+	   str = str.replace(/(^\s*)|(\s*$)/g,'')
+	}
+	
+	return str;
+}
+
+
+function div_hidden_show(form_item,flag){
+	
+	if(flag=="hidden"){
+		document.getElementById(form_item).style.display="none";
+	}else{
+		
+		document.getElementById(form_item).style.display="block";
+	}
+	
+	
+}
+
+function addCookie(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入失敗，請使用Ctrl+D進行加入");
+        }
+    }
+}
+//设为首页 <a onclick="SetHome(this,window.location)">设为首页</a>
+function setHomepage(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被瀏覽器拒絕！\n請在瀏覽器地址欄輸入“about:config”并回車\n然後將[signed.applets.codebase_principal_support]的值設為'true',雙擊即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+
