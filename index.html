@@ -1,268 +1,281 @@
-﻿<!doctype html>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <!-- Required meta tags -->
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    
-    <!-- Custom Styles CSS -->
-    <link href="css/dashboard.css" rel="stylesheet">
-    <link href="css/starter-dialog.css" rel="stylesheet">
-    <!-- title -->
-    <title>加油好嘛! 網站</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上坂精密自動化 - 工業自動化解決方案領導者</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=PingFang+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">加油!</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownSettings">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownProfile">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="CustomerService.html">聯繫我們 <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reports</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Analytics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Export</a>
-                    </li>
-                </ul>
-
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nav item</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nav item again</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">One more nav</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Another nav item</a>
-                    </li>
-                </ul>
-
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nav item again</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">One more nav</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Another nav item</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
-                <h1>Datasheet</h1>
-
-                <section class="row text-center placeholders">
-                    <div class="col-6 col-sm-3 placeholder">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <div class="text-muted">Something else</div>
-                    </div>
-                    <div class="col-6 col-sm-3 placeholder">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                    </div>
-                    <div class="col-6 col-sm-3 placeholder">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                    </div>
-                    <div class="col-6 col-sm-3 placeholder">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                    </div>
-                </section>
-
-                <h2>Section title</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Header</th>
-                                <th>Header</th>
-                                <th>Header</th>
-                                <th>Header</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1,001</td>
-                                <td>Lorem</td>
-                                <td>ipsum</td>
-                                <td>dolor</td>
-                                <td>sit</td>
-                            </tr>
-                            <tr>
-                                <td>1,002</td>
-                                <td>amet</td>
-                                <td>consectetur</td>
-                                <td>adipiscing</td>
-                                <td>elit</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>Integer</td>
-                                <td>nec</td>
-                                <td>odio</td>
-                                <td>Praesent</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>libero</td>
-                                <td>Sed</td>
-                                <td>cursus</td>
-                                <td>ante</td>
-                            </tr>
-                            <tr>
-                                <td>1,004</td>
-                                <td>dapibus</td>
-                                <td>diam</td>
-                                <td>Sed</td>
-                                <td>nisi</td>
-                            </tr>
-                            <tr>
-                                <td>1,005</td>
-                                <td>Nulla</td>
-                                <td>quis</td>
-                                <td>sem</td>
-                                <td>at</td>
-                            </tr>
-                            <tr>
-                                <td>1,006</td>
-                                <td>nibh</td>
-                                <td>elementum</td>
-                                <td>imperdiet</td>
-                                <td>Duis</td>
-                            </tr>
-                            <tr>
-                                <td>1,007</td>
-                                <td>sagittis</td>
-                                <td>ipsum</td>
-                                <td>Praesent</td>
-                                <td>mauris</td>
-                            </tr>
-                            <tr>
-                                <td>1,008</td>
-                                <td>Fusce</td>
-                                <td>nec</td>
-                                <td>tellus</td>
-                                <td>sed</td>
-                            </tr>
-                            <tr>
-                                <td>1,009</td>
-                                <td>augue</td>
-                                <td>semper</td>
-                                <td>porta</td>
-                                <td>Mauris</td>
-                            </tr>
-                            <tr>
-                                <td>1,010</td>
-                                <td>massa</td>
-                                <td>Vestibulum</td>
-                                <td>lacinia</td>
-                                <td>arcu</td>
-                            </tr>
-                            <tr>
-                                <td>1,011</td>
-                                <td>eget</td>
-                                <td>nulla</td>
-                                <td>Class</td>
-                                <td>aptent</td>
-                            </tr>
-                            <tr>
-                                <td>1,012</td>
-                                <td>taciti</td>
-                                <td>sociosqu</td>
-                                <td>ad</td>
-                                <td>litora</td>
-                            </tr>
-                            <tr>
-                                <td>1,013</td>
-                                <td>torquent</td>
-                                <td>per</td>
-                                <td>conubia</td>
-                                <td>nostra</td>
-                            </tr>
-                            <tr>
-                                <td>1,014</td>
-                                <td>per</td>
-                                <td>inceptos</td>
-                                <td>himenaeos</td>
-                                <td>Curabitur</td>
-                            </tr>
-                            <tr>
-                                <td>1,015</td>
-                                <td>sodales</td>
-                                <td>ligula</td>
-                                <td>in</td>
-                                <td>libero</td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"  > 
+					<img alt="" src="./img/LOGO_ICON.png" style="width: 32px; height: 32px;">
+                    <span>上坂精密自動化有限公司</span>
+					<i class="fas fa-cog"></i>
                 </div>
-            </main>
-        </div>
-    </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">首頁</a></li>
+                    <li><a href="#products">產品中心</a></li>
+                    <li><a href="#solutions">解決方案</a></li>
+                    <li><a href="#cases">成功案例</a></li>
+                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="#contact">聯繫我們</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Optional JavaScript -->
-    <!-- Bootstrap core JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>智能製造 · 智慧未來</h1>
+            <p>專注工業自動化領域，為企業提供全方位智能解決方案</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">瞭解更多</button>
+                <button class="btn-secondary">聯繫我們</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="visual-animation"></div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="section-header">
+            <h2>產品中心</h2>
+            <p>自主研發的核心產品，滿足不同行業的自動化需求</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <i class="fas fa-microchip"></i>
+                <h3>工業控制器</h3>
+                <p>高性能PLC控制器，支持多種通信協議</p>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-robot"></i>
+                <h3>工業機器人</h3>
+                <p>高精度協作機器人，靈活適應各種場景</p>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-database"></i>
+                <h3>MES系統</h3>
+                <p>智能製造執行系統，實現生產全程追溯</p>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>數據分析平臺</h3>
+                <p>大數據分析與可視化，助力科學決策</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="solutions">
+        <div class="section-header">
+            <h2>解決方案</h2>
+            <p>針對不同行業量身定制的自動化解決方案</p>
+        </div>
+        <div class="solutions-grid">
+            <div class="solution-card">
+                <div class="solution-image" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=smart%20factory%20automation%20production%20line%20industrial&image_size=landscape_16_9')"></div>
+                <div class="solution-content">
+                    <h3>智能工廠解決方案</h3>
+                    <p>實現生產全流程自動化控制，提升效率與品質</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <div class="solution-image" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=logistics%20warehouse%20automation%20robot%20arm&image_size=landscape_16_9')"></div>
+                <div class="solution-content">
+                    <h3>物流倉儲自動化</h3>
+                    <p>智能倉儲管理系統，優化物流配送效率</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <div class="solution-image" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=energy%20power%20plant%20smart%20control%20system&image_size=landscape_16_9')"></div>
+                <div class="solution-content">
+                    <h3>能源管理系統</h3>
+                    <p>節能減排智能監控，實現綠色生產</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <div class="solution-image" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=medical%20equipment%20automation%20laboratory&image_size=landscape_16_9')"></div>
+                <div class="solution-content">
+                    <h3>量測設備自動化</h3>
+                    <p>精准2.5D設備控制，保障品質</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases" class="cases">
+        <div class="section-header">
+            <h2>成功案例</h2>
+            <p>服務眾多知名企業，助力產業升級</p>
+        </div>
+        <div class="cases-carousel">
+            <div class="case-item active">
+                <div class="case-content">
+                    <h3>某大型汽車製造廠</h3>
+                    <p>為其打造全自動化生產線，生產效率提升300%，產品合格率達到99.8%</p>
+                    <div class="case-metrics">
+                        <span>效率提升 300%</span>
+                        <span>合格率 99.8%</span>
+                    </div>
+                </div>
+                <div class="case-image">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=automobile%20factory%20assembly%20line%20robots&image_size=landscape_16_9" alt="汽車製造案例">
+                </div>
+            </div>
+            <div class="case-item">
+                <div class="case-content">
+                    <h3>某電子元器件企業</h3>
+                    <p>部署智能倉儲系統，實現原材料到成品的全流程追溯管理</p>
+                    <div class="case-metrics">
+                        <span>庫存周轉率 +200%</span>
+                        <span>差錯率 -95%</span>
+                    </div>
+                </div>
+                <div class="case-image">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=electronic%20components%20smart%20warehouse%20automation&image_size=landscape_16_9" alt="電子元器件案例">
+                </div>
+            </div>
+            <div class="case-item">
+                <div class="case-content">
+                    <h3>某半導體集團</h3>
+                    <p>提供符合GMP標準的自動化生產解決方案，確保品質</p>
+                    <div class="case-metrics">
+                        <span>合規性 100%</span>
+                        <span>產能提升 180%</span>
+                    </div>
+                </div>
+                <div class="case-image">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=pharmaceutical%20factory%20cleanroom%20automation&image_size=landscape_16_9" alt="制藥案例">
+                </div>
+            </div>
+        </div>
+        <div class="cases-nav">
+            <span class="nav-dot active"></span>
+            <span class="nav-dot"></span>
+            <span class="nav-dot"></span>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>關於我們</h2>
+            <p>上坂精密自動化有限公司成立於2026年，是國內領先的工業自動化解決方案提供商。我們專注於工業控制、智能製造等領域，致力於為客戶提供高品質的產品和服務。</p>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-value">15+</span>
+                    <span class="stat-label">年行業經驗</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">500+</span>
+                    <span class="stat-label">服務客戶</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">100+</span>
+                    <span class="stat-label">專利技術</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">98%</span>
+                    <span class="stat-label">客戶滿意度</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20technology%20company%20office%20team%20working&image_size=landscape_16_9" alt="公司團隊">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>聯繫我們</h2>
+            <p>期待與您合作，共同推動產業升級</p>
+			<img alt="" src="./img/LOGO.png" style="width: 993px; height: 150px;">
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <span>地址</span>
+                        <p>高雄市苓雅區中華四路161號1樓</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <span>電話</span>
+                        <p>07-2692265</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <span>郵箱</span>
+                        <p>ching@csvl.com.tw</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="電子郵箱" required>
+                    <input type="tel" placeholder="聯繫電話" required>
+                    <textarea placeholder="留言內容" rows="4" required></textarea>
+                    <button type="submit" class="btn-primary">提交留言</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-cog"></i>
+                    <span >上坂精密自動化</span> 
+                </div>
+                <p>專注工業自動化，引領智能製造未來</p>
+            </div>
+            <div class="footer-section">
+                <h4>產品服務</h4>
+                <ul>
+                    <li><a href="#products">工業控制器</a></li>
+                    <li><a href="#products">工業機器人</a></li>
+                    <li><a href="#products">MES系統</a></li>
+                    <li><a href="#products">數據分析</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>解決方案</h4>
+                <ul>
+                    <li><a href="#solutions">智能工廠</a></li>
+                    <li><a href="#solutions">物流倉儲</a></li>
+                    <li><a href="#solutions">能源管理</a></li>
+                    <li><a href="#solutions">醫療設備</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>聯繫我們</h4>
+                <p>電話：07-2692265</p>
+                <p>郵箱：ching@csvl.com.tw</p>
+                <p>地址：高雄市苓雅區中華四路161號1樓</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2026 上坂精密自動化有限公司 版權所有</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

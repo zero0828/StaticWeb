@@ -1,0 +1,38 @@
+# 忽略操作系統檔
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# 忽略編輯器檔
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 忽略日誌檔
+*.log
+
+# 忽略構建輸出
+dist/
+build/
+node_modules/
+
+# 忽略臨時檔
+tmp/
+temp/
+
+# 忽略敏感資訊
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 忽略證書檔
+*.pem
+*.key
+*.crt
+
+# 忽略編輯器配置
+*.code-workspace
